@@ -5,18 +5,21 @@ import Home from "./views/Home";
 import About from "./views/About";
 import Shop from "./views/Shop";
 import Header from "./components/Header";
+import { BasketProvider } from "./context/BasketContext";
 
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
-        <Header />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/shop" element={<Shop />} />
-        </Routes>
-      </BrowserRouter>
+      <BasketProvider>
+        <BrowserRouter>
+          <Header />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/shop" element={<Shop />} />
+            <Route path="/about" element={<About />} />
+          </Routes>
+        </BrowserRouter>
+      </BasketProvider>
     </div>
   );
 }

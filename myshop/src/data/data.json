@@ -1,0 +1,125 @@
+[
+  {
+    "id": 1,
+    "name": "Laptop Asus",
+    "price": "279",
+    "image": "https://i.otto.de/i/otto/74d7b981-8563-5ac9-9295-b4e40edbd821?h=520&w=551&sm=clamp"
+  },
+
+  {
+    "id": 2,
+    "name": "WATCH FIT Smartwatch",
+    "price": "129",
+    "image": "https://i.otto.de/i/otto/0a289c12-229b-5759-b7e3-db41d44461a9?h=520&w=551&sm=clamp"
+  },
+  {
+    "id": 3,
+    "name": "Over-Ear-Kopfhörer",
+    "price": "399",
+    "image": "https://i.otto.de/i/otto/a2d6f567-c18a-5ec6-a100-96c7e644b2be?h=520&w=551&sm=clamp"
+  },
+
+  {
+    "id": 4,
+    "name": "wireless In-Ear-Kopfhörer",
+    "price": "179",
+    "image": "https://i.otto.de/i/otto/78cec92e-27af-5dad-9a8a-23eb81dc9dd6?h=520&w=551&sm=clamp"
+  },
+  {
+    "id": 5,
+    "name": "Curved-Gaming-Monitor",
+    "price": "1579",
+    "image": "https://i.otto.de/i/otto/2da92af3-eebc-527f-98f1-9c7c22f4ec93?h=520&w=551&sm=clamp"
+  },
+  {
+    "id": 6,
+    "name": " Ultra Tablet ",
+    "price": "1250",
+    "image": "https://i.otto.de/i/otto/d2184014-9e41-5b48-88df-5e781c08df9a?h=520&w=551&sm=clamp"
+  },
+  {
+    "id": 7,
+    "name": "Apple iPhone 14 Pro Max",
+    "price": "1.579",
+    "image": "https://i.otto.de/i/otto/0ac17185-db6d-5752-ac49-a80507f2eaaf?h=520&w=551&sm=clamp"
+  },
+  {
+    "id": 8,
+    "name": "Multifunktionsdrucker",
+    "price": "184",
+    "image": "https://i.otto.de/i/otto/21182e5c-ce71-51f9-a956-8e7c7d963a6a?h=520&w=551&sm=clamp"
+  },
+
+  {
+    "id": 9,
+    "name": "Wetterstation (mit Außensensor, Funk-Wetterstation mit Projektionsanzeige DCF-Funkuhr / Wettervorhersage)",
+    "price": "60",
+    "image": "https://i.otto.de/i/otto/10c4d9e7-1df4-5205-a135-6c430ee6141c?h=520&w=551&sm=clamp"
+  },
+  {
+    "id": 10,
+    "name": "Memory PC Windows 11 Pro Business-PC",
+    "price": "629",
+    "image": "https://i.otto.de/i/otto/5c60c911-0531-4879-825b-bec22d367f2f?h=520&w=551&sm=clamp"
+  },
+  {
+    "id": 11,
+    "name": "Laminiergerät  Schneidemaschine und Eckenrunder",
+    "price": "155",
+    "image": "https://i.otto.de/i/otto/3716d2ba-bde6-4bb5-b901-b5f49efe92e9?h=520&w=551&sm=clamp"
+  },
+  {
+    "id": 12,
+    "name": "Desktop Barcode Scanner",
+    "price": "140",
+    "image": "https://i.otto.de/i/otto/c5c07185-d028-45e6-a6ff-aac59c610141?h=520&w=551&sm=clamp"
+  },
+  {
+    "id": 13,
+    "name": " Apple iMac 24 mit 4.5K Retina Display iMac  ",
+    "price": "1669",
+    "image": "https://i.otto.de/i/otto/867949ba-2c81-511b-bcc2-44df61020708?h=520&w=551&sm=clamp"
+  },
+  {
+    "id": 14,
+    "name": " Apple Mac Mini Mac Mini ",
+    "price": "780",
+    "image": "https://i.otto.de/i/otto/efdedd50-7094-5377-89d1-f4b718e663fb?h=520&w=551&sm=clamp"
+  },
+  {
+    "id": 15,
+    "name": " HomePod mini Lautsprecher (Bluetooth, WLAN (WiFi) ",
+    "price": "100",
+    "image": "https://i.otto.de/i/otto/2db998d4-9a00-5b63-88e9-0b87d79c4e3e?h=520&w=551&sm=clamp"
+  },
+  {
+    "id": 16,
+    "name": "MagSafe Strom Adapter :Wireless Charger   ",
+    "price": "50",
+    "image": "https://i.otto.de/i/otto/110205c4-ccc9-5b73-92f8-3e9b8f1a2284?h=520&w=551&sm=clamp"
+  },
+  {
+    "id": 17,
+    "name": " Apple »MagSafe Battery Pack« Smartphone-Ladegerät ",
+    "price": "100",
+    "image": "https://i.otto.de/i/otto/1e25fb42-6b40-5dfa-9331-8bce2cc34405?h=520&w=551&sm=clamp"
+  },
+  {
+    "id": 18,
+    "name": " USB-Ladegerät  ",
+    "price": "24",
+    "image": "https://i.otto.de/i/otto/2edcc1dd-d623-5e4f-bdf8-5955fb23d57e?h=520&w=551&sm=clamp"
+  },
+  {
+    "id": 19,
+    "name": " Magic Keyboard MQ052D/A-Tastatur ",
+    "price": "135",
+    "image": "https://i.otto.de/i/otto/20830241?h=520&w=551&sm=clamp"
+  },
+  {
+    "id": 20,
+    "name": "Maus (RF Wireless)",
+    "price": "50",
+    "image": "https://i.otto.de/i/otto/1ac45681-62f9-5ea4-88bc-9c79712c0dd8?h=520&w=551&sm=clamp"
+  }
+]
