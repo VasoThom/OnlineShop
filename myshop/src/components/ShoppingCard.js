@@ -18,7 +18,7 @@ export default function ShoppingCard({ isOpen }) {
               <CardItem key={item.id} {...item} />
             ))}
             <div className="ms-auto fw-bold fs-5">
-              Total{" "}
+              Total
               {cardItems.reduce((total, cardItems) => {
                 const item = data.find((i) => i.id === cardItems.id);
                 return total + (item?.price || 0) * cardItems.count;
