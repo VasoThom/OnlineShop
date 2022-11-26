@@ -1,5 +1,7 @@
 import React, { createContext, useState } from "react";
 import { useContext } from "react";
+import ShoppingCard from "../components/ShoppingCard";
+import LocalStorage from "../storage/LocalStorage";
 
 const BasketContext = createContext({});
 export default function useBasket() {
@@ -7,7 +9,16 @@ export default function useBasket() {
 }
 
 export function BasketProvider({ children }) {
-  const [cardItems, setCardItems] = useState([]);
+  const [cardItems, setCardItems] = LocalStorage("shopping-card", []);
+  const [isOpen, setIsOpen] = useState(false);
+
+  const basketCount = cardItems.reduce((count, item) => item.count + count, 0);
+  const openBasket = () => {
+    return setIsOpen(true);
+  };
+  const closeBaket = () => {
+    return setIsOpen(false);
+  };
 
   const getItemCount = (id) => {
     return cardItems.find((item) => item.id === id)?.count || 0;
@@ -53,9 +64,19 @@ export function BasketProvider({ children }) {
 
   return (
     <BasketContext.Provider
-      value={{ getItemCount, increaseCount, decreaseCount, removeItem }}
+      value={{
+        getItemCount,
+        increaseCount,
+        decreaseCount,
+        removeItem,
+        cardItems,
+        basketCount,
+        openBasket,
+        closeBaket,
+      }}
     >
       {children}
+      <ShoppingCard isOpen={isOpen} />
     </BasketContext.Provider>
   );
 }

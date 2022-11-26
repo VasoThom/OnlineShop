@@ -5,8 +5,10 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 
 import { Link } from "react-router-dom";
+import useBasket from "../context/BasketContext";
 
 export default function Header() {
+  const { openBasket, basketCount } = useBasket();
   return (
     <>
       <Navbar sticky="top" bg="dark" variant="dark">
@@ -24,22 +26,27 @@ export default function Header() {
             </Nav.Link>
           </Nav>
         </Container>
-        <Button style={{ width: "70px", height: "40px", position: "relative" }}>
-          Basket
-          <div
-            className="rounded-circle bg-light d-flex justify-content-center align-items-center"
-            style={{
-              color: "black",
-              width: "20px",
-              height: "20px",
-              position: "absolute",
-              bottom: -5,
-              right: 0,
-            }}
+        {basketCount > 0 && (
+          <Button
+            onClick={openBasket}
+            style={{ width: "70px", height: "40px", position: "relative" }}
           >
-            3
-          </div>
-        </Button>
+            Basket
+            <div
+              className="rounded-circle bg-light d-flex justify-content-center align-items-center"
+              style={{
+                color: "black",
+                width: "20px",
+                height: "20px",
+                position: "absolute",
+                bottom: -5,
+                right: 0,
+              }}
+            >
+              {basketCount}
+            </div>
+          </Button>
+        )}
       </Navbar>
     </>
   );
