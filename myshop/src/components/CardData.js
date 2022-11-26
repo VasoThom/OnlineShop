@@ -1,9 +1,12 @@
 import React from "react";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
+import useBasket from "../context/BasketContext";
 
 export default function CardData({ id, name, price, image }) {
-  const count = 0;
+  const { getItemCount, increaseCount, decreaseCount, removeItem } =
+    useBasket();
+  const count = getItemCount(id);
   return (
     <div>
       <Card style={{ width: "18rem" }}>
@@ -18,15 +21,21 @@ export default function CardData({ id, name, price, image }) {
           <Card.Text>{price} €</Card.Text>
           <div>
             {count === 0 ? (
-              <Button variant="primary">Add to basket</Button>
+              <Button variant="primary" onClick={() => increaseCount(id)}>
+                Add to basket
+              </Button>
             ) : (
               <div className="d-flex align-items-center flex-column">
                 <div className="d-flex align-items-center justify-content-center">
-                  <Button>-</Button>
-                  <div className="fs-4 m-2 ">{count} in Basket</div>
-                  <Button>+</Button>
+                  <Button onClick={() => decreaseCount(id)}>-</Button>
+                  <div className="fs-4 m-2 " onClick={() => increaseCount(id)}>
+                    {count} in Basket
+                  </div>
+                  <Button onClick={() => increaseCount(id)}>+</Button>
                 </div>
-                <Button variant="danger">Remove</Button>
+                <Button variant="danger" onClick={() => removeItem(id)}>
+                  Remove
+                </Button>
               </div>
             )}
           </div>
